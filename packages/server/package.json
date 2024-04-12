@@ -1,0 +1,25 @@
+{
+  "name": "@e-cart_project/server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": { 
+    "build": "del /s /q /f dist && tsc",
+    "start:server": "node dist/src/app.js",
+    "start":"npm run build && nodemon",
+    "test": "jest --coverage"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.7",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
